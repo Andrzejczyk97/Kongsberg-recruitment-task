@@ -27,6 +27,7 @@ The following technologies and libraries were used in this project:
 
 - TypeScript 
 - React.js
+- MobX
 - SASS
 - Google Books API
 
