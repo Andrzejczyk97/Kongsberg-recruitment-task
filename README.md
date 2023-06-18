@@ -1,5 +1,7 @@
 # Dynamic Table with Row Selection and Breadcrumb Functionality
 
+You can see the project [here](https://dynamic-table-task.surge.sh/)
+
 This project is a React.js application that demonstrates the skills in building a dynamic table with row selection and breadcrumb functionality. The application fetches data from an API endpoint and populates the table dynamically. 
 - The table is populated with some starting data.
 - You can select any row by clicking on it - the detailed information will be shown underneath. 
