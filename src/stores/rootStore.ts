@@ -1,7 +1,7 @@
 import { makeAutoObservable, reaction, runInAction } from "mobx";
 import React from "react";
 import { Book, BreadcrumbPiece } from "../types";
-import { fetchData } from "../api/booksAPI";
+import { fetchAPI } from "../api/booksAPI";
 
 export class RootStore {
     content: Book[] | undefined = undefined;
@@ -11,7 +11,7 @@ export class RootStore {
     fetchData = async () => {
         this.content = undefined;
         try {
-          const data = await fetchData(this.query);
+          const data = await fetchAPI(this.query);
           runInAction(() => {
             this.content = data;
           });
